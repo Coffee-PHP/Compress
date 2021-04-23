@@ -15,7 +15,7 @@
         "compress",
         "compression"
     ],
-    "version": "1.1.0",
+    "version": "1.1.1",
     "time": "2021-04-23",
     "readme": "README.md",
     "require": {

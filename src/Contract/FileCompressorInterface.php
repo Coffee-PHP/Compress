@@ -41,5 +41,5 @@ interface FileCompressorInterface
      *
      * @throws CompressException
      */
-    public function compressFile(string $uncompressedFile): string;
+    public function compressFile(string $uncompressedFilePath): string;
 }

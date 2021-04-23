@@ -41,5 +41,5 @@ interface DirectoryCompressorInterface
      *
      * @throws CompressException
      */
-    public function compressDirectory(string $uncompressedDirectory): string;
+    public function compressDirectory(string $uncompressedDirectoryPath): string;
 }
