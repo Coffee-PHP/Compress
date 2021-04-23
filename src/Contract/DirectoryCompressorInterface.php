@@ -26,8 +26,6 @@ declare(strict_types=1);
 namespace CoffeePhp\Compress\Contract;
 
 use CoffeePhp\Compress\Exception\CompressException;
-use CoffeePhp\FileSystem\Contract\Data\Path\DirectoryInterface;
-use CoffeePhp\FileSystem\Contract\Data\Path\FileInterface;
 
 /**
  * Interface DirectoryCompressorInterface
@@ -38,11 +36,10 @@ use CoffeePhp\FileSystem\Contract\Data\Path\FileInterface;
 interface DirectoryCompressorInterface
 {
     /**
-     * Compress the given directory.
+     * Compress the given directory and
+     * get the path of the compressed directory's file.
      *
-     * @param DirectoryInterface $uncompressedDirectory
-     * @return FileInterface
      * @throws CompressException
      */
-    public function compressDirectory(DirectoryInterface $uncompressedDirectory): FileInterface;
+    public function compressDirectory(string $uncompressedDirectory): string;
 }

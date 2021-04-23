@@ -36,10 +36,9 @@ use CoffeePhp\Compress\Exception\CompressException;
 interface StringCompressorInterface
 {
     /**
-     * Compress the given string.
+     * Compress the given string and
+     * get the compressed string.
      *
-     * @param string $string The uncompressed string.
-     * @return string The compressed string.
      * @throws CompressException
      */
     public function compressString(string $string): string;

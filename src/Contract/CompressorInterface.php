@@ -31,10 +31,6 @@ namespace CoffeePhp\Compress\Contract;
  * @author Danny Damsky <dannydamsky99@gmail.com>
  * @since 2020-09-07
  */
-interface CompressorInterface extends
-    PathCompressorInterface,
-    DirectoryCompressorInterface,
-    FileCompressorInterface,
-    StringCompressorInterface
+interface CompressorInterface extends PathCompressorInterface, StringCompressorInterface
 {
 }

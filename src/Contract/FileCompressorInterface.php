@@ -26,7 +26,6 @@ declare(strict_types=1);
 namespace CoffeePhp\Compress\Contract;
 
 use CoffeePhp\Compress\Exception\CompressException;
-use CoffeePhp\FileSystem\Contract\Data\Path\FileInterface;
 
 /**
  * Interface FileCompressorInterface
@@ -37,11 +36,10 @@ use CoffeePhp\FileSystem\Contract\Data\Path\FileInterface;
 interface FileCompressorInterface
 {
     /**
-     * Compress the given file.
+     * Compress the given file and
+     * get the path of the compressed file.
      *
-     * @param FileInterface $file
-     * @return FileInterface
      * @throws CompressException
      */
-    public function compressFile(FileInterface $file): FileInterface;
+    public function compressFile(string $uncompressedFile): string;
 }

@@ -25,24 +25,12 @@ declare(strict_types=1);
 
 namespace CoffeePhp\Compress\Contract;
 
-use CoffeePhp\Compress\Exception\CompressException;
-use CoffeePhp\FileSystem\Contract\Data\Path\FileInterface;
-use CoffeePhp\FileSystem\Contract\Data\Path\PathInterface;
-
 /**
  * Interface PathCompressorInterface
  * @package coffeephp\compress
  * @author Danny Damsky <dannydamsky99@gmail.com>
  * @since 2020-09-07
  */
-interface PathCompressorInterface
+interface PathCompressorInterface extends DirectoryCompressorInterface, FileCompressorInterface
 {
-    /**
-     * Compress the given path.
-     *
-     * @param PathInterface $uncompressedPath The path to compress.
-     * @return FileInterface The path of the compressed archive.
-     * @throws CompressException
-     */
-    public function compressPath(PathInterface $uncompressedPath): FileInterface;
 }
